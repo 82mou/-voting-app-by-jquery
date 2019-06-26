@@ -1,0 +1,238 @@
+<% var
+  id = "controlpanel",
+  title = "Control Panel",
+  description = "sample text,sample text",
+  keywords = "word1,word2,word3";
+%>
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7" prefix="og: http://ogp.me/ns#"><![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8" prefix="og: http://ogp.me/ns#"><![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9" prefix="og: http://ogp.me/ns#"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" prefix="og: http://ogp.me/ns#"><!--<![endif]-->
+<head>
+  <meta charset="UTF-8">
+  <title>Control Panel</title>
+  <% include view/_header %>
+</head>
+<body>
+  <div id="app">
+    <div class="container">
+      <div class="py-5">
+        <h1 class="text-center p-5">Control Panel</h1>
+        <div class="row">
+          <div class="col-8">
+            <div>
+              <div class="form-group">
+                <form name="title-form" id="js-title-form">
+                  <div class="input-group">
+                    <span class="input-group-addon">タイトル</span>
+                    <input type="text" name="title" class="form-control js-title" aria-label="Amount (to the nearest dollar)">
+                    <button type="submit" name="btn" class="btn btn-primary ml-3 js-submit-title">送信</button>
+                  </div>
+                </form>
+              </div>
+              <div class="form-group">
+                <form name="name-form-a" id="js-name-form-a">
+                  <div class="input-group">
+                    <span class="input-group-addon">A</span>
+                    <input type="text" name="name-a" class="form-control js-name-a">
+                    <button type="submit" name="submit-name-a" class="btn btn-primary ml-3 js-submit-name-a">送信</button>
+                    <div class="form-check sound-text-box text-center mb-0 pl-3 pr-2">
+                      <label class="form-check-label sound-text-label pl-0">
+                        <span class="sound-text mb-0">音1</span>
+                        <input class="form-check-input sound-checkbox ml-0 js-sound" type="radio" name="a-sound" data-alphabet="A" value="0">
+                      </label>
+                    </div>
+                    <div class="form-check sound-text-box text-center mb-0 pl-2 pr-2">
+                      <label class="form-check-label sound-text-label pl-0">
+                        <span class="sound-text mb-0">音2</span>
+                        <input class="form-check-input sound-checkbox ml-0 js-sound" type="radio" name="a-sound" data-alphabet="A" value="1">
+                      </label>
+                    </div>
+                    <div class="form-check sound-text-box text-center mb-0 pl-2 pr-2">
+                      <label class="form-check-label sound-text-label pl-0">
+                        <span class="sound-text mb-0">音3</span>
+                        <input class="form-check-input sound-checkbox ml-0 js-sound" type="radio" name="a-sound" data-alphabet="A" value="2">
+                      </label>
+                    </div>
+                    <div class="form-check sound-text-box text-center mb-0 pl-2 pr-2">
+                      <label class="form-check-label sound-text-label pl-0">
+                        <span class="sound-text mb-0">音4</span>
+                        <input class="form-check-input sound-checkbox ml-0 js-sound" type="radio" name="a-sound" data-alphabet="A" value="3">
+                      </label>
+                    </div>
+                    <div class="form-check sound-text-box text-center mb-0 pl-2 pr-2">
+                      <label class="form-check-label sound-text-label pl-0">
+                        <span class="sound-text mb-0">無音</span>
+                        <input class="form-check-input sound-checkbox ml-0 js-sound" type="radio" name="a-sound" data-alphabet="A" value="">
+                      </label>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="form-group">
+                <form name="name-form-b" id="js-name-form-b">
+                  <div class="input-group">
+                    <span class="input-group-addon">B</span>
+                    <input type="text" name="name-b" class="form-control js-name-b">
+                    <button type="submit" name="submit-name-b" class="btn btn-primary ml-3 js-submit-name-b">送信</button>
+                    <div class="form-check sound-text-box text-center mb-0 pl-3 pr-2">
+                      <label class="form-check-label sound-text-label pl-0">
+                        <span class="sound-text mb-0">音1</span>
+                        <input class="form-check-input sound-checkbox ml-0 js-sound" type="radio" name="b-sound" data-alphabet="B" value="0">
+                      </label>
+                    </div>
+                    <div class="form-check sound-text-box text-center mb-0 pl-2 pr-2">
+                      <label class="form-check-label sound-text-label pl-0">
+                        <span class="sound-text mb-0">音2</span>
+                        <input class="form-check-input sound-checkbox ml-0 js-sound" type="radio" name="b-sound" data-alphabet="B" value="1">
+                      </label>
+                    </div>
+                    <div class="form-check sound-text-box text-center mb-0 pl-2 pr-2">
+                      <label class="form-check-label sound-text-label pl-0">
+                        <span class="sound-text mb-0">音3</span>
+                        <input class="form-check-input sound-checkbox ml-0 js-sound" type="radio" name="b-sound" data-alphabet="B" value="2">
+                      </label>
+                    </div>
+                    <div class="form-check sound-text-box text-center mb-0 pl-2 pr-2">
+                      <label class="form-check-label sound-text-label pl-0">
+                        <span class="sound-text mb-0">音4</span>
+                        <input class="form-check-input sound-checkbox ml-0 js-sound" type="radio" name="b-sound" data-alphabet="B" value="3">
+                      </label>
+                    </div>
+                    <div class="form-check sound-text-box text-center mb-0 pl-2 pr-2">
+                      <label class="form-check-label sound-text-label pl-0">
+                        <span class="sound-text mb-0">無音</span>
+                        <input class="form-check-input sound-checkbox ml-0 js-sound" type="radio" name="b-sound" data-alphabet="B" value="">
+                      </label>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="form-group">
+                <form name="name-form-c" id="js-name-form-c">
+                  <div class="input-group">
+                    <span class="input-group-addon">C</span>
+                    <input type="text" name="name-c" class="form-control js-name-c">
+                    <button type="submit" name="submit-name-c" class="btn btn-primary ml-3 js-submit-name-c">送信</button>
+                    <div class="form-check sound-text-box text-center mb-0 pl-3 pr-2">
+                      <label class="form-check-label sound-text-label pl-0">
+                        <span class="sound-text mb-0">音1</span>
+                        <input class="form-check-input sound-checkbox ml-0 js-sound" type="radio" name="c-sound" data-alphabet="C" value="0">
+                      </label>
+                    </div>
+                    <div class="form-check sound-text-box text-center mb-0 pl-2 pr-2">
+                      <label class="form-check-label sound-text-label pl-0">
+                        <span class="sound-text mb-0">音2</span>
+                        <input class="form-check-input sound-checkbox ml-0 js-sound" type="radio" name="c-sound" data-alphabet="C" value="1">
+                      </label>
+                    </div>
+                    <div class="form-check sound-text-box text-center mb-0 pl-2 pr-2">
+                      <label class="form-check-label sound-text-label pl-0">
+                        <span class="sound-text mb-0">音3</span>
+                        <input class="form-check-input sound-checkbox ml-0 js-sound" type="radio" name="c-sound" data-alphabet="C" value="2">
+                      </label>
+                    </div>
+                    <div class="form-check sound-text-box text-center mb-0 pl-2 pr-2">
+                      <label class="form-check-label sound-text-label pl-0">
+                        <span class="sound-text mb-0">音4</span>
+                        <input class="form-check-input sound-checkbox ml-0 js-sound" type="radio" name="c-sound" data-alphabet="C" value="3">
+                      </label>
+                    </div>
+                    <div class="form-check sound-text-box text-center mb-0 pl-2 pr-2">
+                      <label class="form-check-label sound-text-label pl-0">
+                        <span class="sound-text mb-0">無音</span>
+                        <input class="form-check-input sound-checkbox ml-0 js-sound" type="radio" name="c-sound" data-alphabet="C" value="">
+                      </label>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="form-group">
+                <form name="name-form-d" id="js-name-form-d">
+                  <div class="input-group">
+                    <span class="input-group-addon">D</span>
+                    <input type="text" name="name-d" class="form-control js-name-d">
+                    <button type="submit" name="submit-name-d" class="btn btn-primary ml-3 js-submit-name-d">送信</button>
+                    <div class="form-check sound-text-box text-center mb-0 pl-3 pr-2">
+                      <label class="form-check-label sound-text-label pl-0">
+                        <span class="sound-text mb-0">音1</span>
+                        <input class="form-check-input sound-checkbox ml-0 js-sound" type="radio" name="d-sound" data-alphabet="D" value="0">
+                      </label>
+                    </div>
+                    <div class="form-check sound-text-box text-center mb-0 pl-2 pr-2">
+                      <label class="form-check-label sound-text-label pl-0">
+                        <span class="sound-text mb-0">音2</span>
+                        <input class="form-check-input sound-checkbox ml-0 js-sound" type="radio" name="d-sound" data-alphabet="D" value="1">
+                      </label>
+                    </div>
+                    <div class="form-check sound-text-box text-center mb-0 pl-2 pr-2">
+                      <label class="form-check-label sound-text-label pl-0">
+                        <span class="sound-text mb-0">音3</span>
+                        <input class="form-check-input sound-checkbox ml-0 js-sound" type="radio" name="d-sound" data-alphabet="D" value="2">
+                      </label>
+                    </div>
+                    <div class="form-check sound-text-box text-center mb-0 pl-2 pr-2">
+                      <label class="form-check-label sound-text-label pl-0">
+                        <span class="sound-text mb-0">音4</span>
+                        <input class="form-check-input sound-checkbox ml-0 js-sound" type="radio" name="d-sound" data-alphabet="D" value="3">
+                      </label>
+                    </div>
+                    <div class="form-check sound-text-box text-center mb-0 pl-2 pr-2">
+                      <label class="form-check-label sound-text-label pl-0">
+                        <span class="sound-text mb-0">無音</span>
+                        <input class="form-check-input sound-checkbox ml-0 js-sound" type="radio" name="d-sound" data-alphabet="D" value="">
+                      </label>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="btn btn-outline-danger js-btn-clear">入力クリア</button>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="border p-4">
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox" id="js-count-view-switch" value="option1">統計数表示
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox" id="js-count-switch" value="option2">集計停止
+                </label>
+              </div>
+              <div class="text-center">
+                <button type="button" class="btn btn-danger js-btn-all-clear">オールクリア</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="border mt-5 p-4">
+          <div class="comment-pool__headline">
+            <h3>Comment</h3>
+            <button type="submit" class="btn btn-outline-danger js-btn-comment-clear">コメントクリア</button>
+          </div>
+          <ul class="comment-pool js-comment-pool">
+          </ul>
+          <form name="comment-form" id="js-push-comment-form">
+            <div class="form-group mt-3">
+              <div class="input-group">
+                <input type="text" name="comment" maxlength="30" class="form-control js-push-comment" placeholder="コメント入力MAX30文字">
+                <button type="submit" name="btn" class="btn btn-primary ml-3 js-push-comment-submit">送信</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <% include view/_script %>
+</body>
+</html>

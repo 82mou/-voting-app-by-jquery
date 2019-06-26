@@ -1,0 +1,72 @@
+/*
+    さまざまシーンで要素のレイアウトを整える汎用的なクラス
+*/
+
+//2カラムの横並びにする
+.l-grid {
+    > .l-grid-inner {
+        letter-spacing: 0;
+        font-size: 0;
+        > .l-grid-item {
+            display: inline-block;
+            vertical-align: top;
+            font-size: $base-font-size;
+			letter-spacing: 0.14em;
+            //colmn
+            &.l-grid-item-col2 {
+                width: 50%;
+            }
+            &.l-grid-item-col3 {
+                width: 33.3333%;
+            }
+            &.l-grid-item-col4 {
+                width: 25%;
+            }
+            &.l-grid-item-col5 {
+                width: 20%;
+            }
+            &.l-grid-item-col6 {
+                width: 16.6666%;
+            }
+        }
+    }
+
+    //    col
+    &.l-grid-col2 {
+        > .l-grid-inner > .l-grid-item {
+            width: 50%;
+        }
+    }
+    &.l-grid-col3 {
+        > .l-grid-inner > .l-grid-item {
+            width: 33.3333%;
+        }
+    }
+    &.l-grid-col4 {
+        > .l-grid-inner > .l-grid-item {
+            width: 25%;
+        }
+    }
+    &.l-grid-col5 {
+        > .l-grid-inner > .l-grid-item {
+            width: 20%;
+        }
+    }
+    &.l-grid-col6 {
+        > .l-grid-inner > .l-grid-item {
+            width: 16.6666%;
+        }
+    }
+
+    //    vertical
+    &.l-grid-middle {
+        > .l-grid-inner > .l-grid-item {
+            vertical-align: middle;
+        }
+    }
+    &.l-grid-bottom {
+        > .l-grid-inner > .l-grid-item {
+            vertical-align: bottom;
+        }
+    }
+}

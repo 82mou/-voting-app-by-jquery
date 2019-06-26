@@ -1,0 +1,19 @@
+/*
+#styleguide
+sprite-2x
+
+```
+<i class="sprite-2x icon-bread-crumb-arrow"></i>
+```
+*/
+
+$icon-bread-crumb-arrow: 0px 0px 0px 0px 12px 20px 12px 20px '../images/sprite-2x.png' icon-bread-crumb-arrow;
+
+
+$sprite-2x: ($icon-bread-crumb-arrow,);
+@each $sprite in $sprite-2x {
+    $name: nth($sprite,10);
+    .sprite-2x.#{$name} {
+        @include sprite($sprite,0.5);
+    }
+}

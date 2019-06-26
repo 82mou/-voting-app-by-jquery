@@ -1,0 +1,9 @@
+.wrapper {
+  padding: 20px 0;
+  &.wrapper--user {
+    background-color: #fcfcfc;
+    @include media('pc') {
+      display: none;
+    }
+  }
+}

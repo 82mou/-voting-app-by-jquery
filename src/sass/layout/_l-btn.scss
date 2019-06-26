@@ -1,0 +1,25 @@
+.l-btn {
+	width: 300px;
+	margin-top: 40px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.l-btn-grid{
+  width: 100%;
+  margin-top: 0;
+}
+
+//スマホ用
+@include query($break-sp - 1) {
+	.l-btn {
+		width: 100%;
+		margin-top: 40px;
+		margin-left: auto;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.l-btn-grid{
+		width: 100%;
+		margin-top: 0;
+	}
+}

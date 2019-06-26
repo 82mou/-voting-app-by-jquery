@@ -1,0 +1,20 @@
+.comment-pool { padding-left: 0; }
+
+.comment-pool > li { padding: 10px 0; overflow: hidden; list-style: none; border-top: 1px solid #ddd; }
+
+.comment-pool > li:last-child { border-bottom: 1px solid #ddd; }
+
+.comment-pool > li button { float: right; }
+
+.comment-pool__headline { display: -webkit-box; display: flex; -webkit-box-pack: justify; justify-content: space-between; -webkit-box-align: center; align-items: center; padding: 10px 0; }
+
+.comment-pool__text { display: block; margin-bottom: 0; padding: 8px 0; float: left; }
+
+.sound-text-box { line-height: 1; }
+
+.sound-text { font-size: 12px; }
+
+.sound-text-label { line-height: 1; }
+
+.sound-checkbox { display: inline-block; margin-left: -8px !important; }
+/*# sourceMappingURL=maps/controlpanel.css.map */

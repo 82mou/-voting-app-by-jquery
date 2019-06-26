@@ -1,0 +1,22 @@
+@font-face {
+	font-family: 'Gentium_Book_Basic';
+	src:  url('../lib/fonts/GenBkBasB.ttf') format('truetype'), /* ttf - Safari, Android, iOS */
+	url('../lib/fonts/GenBkBasBI.ttf') format('truetype'),
+	url('../lib/fonts/GenBkBasI.ttf') format('truetype'),
+	url('../lib/fonts/GenBkBasR.ttf') format('truetype')
+}
+
+//antialiased,subpixel-antialiased,none
+$font-smoothing: antialiased;
+
+//auto,optimizeSpeed,optimizeLegibility,geometricPrecision
+$text-rendering: auto;
+
+$base-font-family: "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", 'メイリオ', Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+$font-ie: "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", 'メイリオ', Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+$base-font-size: 14px;
+$base-font-wight: 500;
+$base-font-color: #222;
+$base-letter-spacing: 0.14em;
+$base-background-color: #fff;
+$base-line-height: 1.4;

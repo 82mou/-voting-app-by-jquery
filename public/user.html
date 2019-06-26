@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7" prefix="og: http://ogp.me/ns#"><![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8" prefix="og: http://ogp.me/ns#"><![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9" prefix="og: http://ogp.me/ns#"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" prefix="og: http://ogp.me/ns#"><!--<![endif]-->
+<head>
+  <meta charset="UTF-8">
+  <title>User Display</title>
+  <meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta property="og:locale" content="ja_JP">
+<meta property="fb:admins" content="">
+<meta property="og:title" content="">
+<meta property="og:description" content="">
+<meta property="og:url" content="">
+<meta property="og:site_name" content="">
+<meta property="og:type" content="blog">
+<meta property="og:image" content="./assets/images/common/logo_ogp.png">
+
+<link rel="shortcut icon" href="./assets/images/common/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="./assets/images/common/apple-touch-icon-precomposed.png">
+
+<link rel="stylesheet" href="./assets/css/style.css">
+
+<script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+<script>
+  document.documentElement.className = document.documentElement.className.replace("no-js","js");
+
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDxb8qU1eeu0F-A6ZuJEOuWoNPCl6nswK8",
+    authDomain: "event-75f97.firebaseapp.com",
+    databaseURL: "https://event-75f97.firebaseio.com",
+    projectId: "event-75f97",
+    storageBucket: "event-75f97.appspot.com",
+    messagingSenderId: "1085545854963"
+  };
+  firebase.initializeApp(config);
+</script>
+
+</head>
+<body>
+  <div class="wrapper wrapper--user">
+    <header class="l-header">
+      <div class="l-container">
+        <h1 class="logo"><img src="assets/images/logo.png" alt=""></h1>
+      </div>
+    </header>
+    <main class="l-main">
+      <div class="l-container">
+        <h2 class="title js-title"></h2>
+        <div class="grid">
+          <div class="grid__inner">
+            <div class="grid__item">
+              <div class="js-post count" data-initial="a">
+                <p class="count__num js-count js-count-a is-hide"></p>
+                <div class="count__name">
+                  <p class="count__name__alphabet">A</p>
+                  <p class="count__name__text js-name-a"></p>
+                </div>
+              </div>
+            </div>
+            <div class="grid__item">
+              <div class="js-post count" data-initial="b">
+                <p class="count__num js-count js-count-b is-hide"></p>
+                <div class="count__name">
+                  <p class="count__name__alphabet">B</p>
+                  <p class="count__name__text js-name-b"></p>
+                </div>
+              </div>
+            </div>
+            <div class="grid__item">
+              <div class="js-post count" data-initial="c">
+                <p class="count__num js-count js-count-c is-hide"></p>
+                <div class="count__name">
+                  <p class="count__name__alphabet">C</p>
+                  <p class="count__name__text js-name-c"></p>
+                </div>
+              </div>
+            </div>
+            <div class="grid__item">
+              <div class="js-post count" data-initial="d">
+                <p class="count__num js-count js-count-d is-hide"></p>
+                <div class="count__name">
+                  <p class="count__name__alphabet">D</p>
+                  <p class="count__name__text js-name-d"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="form">
+      <div class="l-container">
+        <form name="comment-form" id="js-form">
+          <input type="text" name="comment" maxlength="30" class="form__input js-comment" placeholder="コメントを入力してください">
+          <div class="btn-wrap">
+            <button type="submit" name="btn" class="btn js-submit">送信</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="view-pc">
+    <p class="view-pc__text">スマホ画面で表示して下さい</p>
+  </div>
+  <div class="layer js-layer dn">
+    <img class="layer__loading js-layer-loading dn" src="assets/images/loading.gif" alt="">
+    <p class="layer__count-stop js-layer-count-stop dn">集計停止中</p>
+  </div>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+
+<script type="text/javascript" src="./assets/js/user.js"></script>
+
+
+</body>
+</html>

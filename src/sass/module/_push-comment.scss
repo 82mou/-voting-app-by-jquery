@@ -1,0 +1,42 @@
+.push-comment {
+  position: relative;
+  overflow: hidden;
+  height: 100px;
+  margin-top: 30px;
+  padding: 12px 15px;
+  border: 1px solid #2196f3;
+}
+.push-comment-text {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  font-size: 50px;
+  color: #2196f3;
+  font-weight: bold;
+  &.is-animate {
+    animation-duration: 4s;
+    animation-name: animate;
+    @keyframes animate {
+      from {
+        opacity: 0;
+        left: 100%;
+      }
+      20% {
+        opacity: 1;
+        left: 50%;
+      }
+      80% {
+        opacity: 1;
+        left: 50%;
+      }
+      to {
+        opacity: 0;
+        left: 0;
+      }
+    }
+  }
+}
