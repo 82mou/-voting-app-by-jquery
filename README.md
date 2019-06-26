@@ -1,1 +1,1 @@
-# -voting-app-by-jquery
+# voting-app-by-jquery
