@@ -76,4 +76,12 @@ http://localhost:5000/
 
 詳しい説明はこちら
 https://qiita.com/kohashi/items/43ea22f61ade45972881
+
+## URL
+
+```
+https://82mou.github.io/voting-app-by-jquery/public/user.html
+https://82mou.github.io/voting-app-by-jquery/public/controlpanel-l5Aqzlfll8.html
+https://82mou.github.io/voting-app-by-jquery/public/screen-0XkfQj8T3z.html
+
 ```
