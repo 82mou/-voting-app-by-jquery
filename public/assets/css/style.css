@@ -42,7 +42,7 @@ textarea { overflow: auto; }
 
 [hidden] { display: none; }
 
-[unselectable] { -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+[unselectable] { -webkit-user-select: none; -ms-user-select: none; user-select: none; }
 
 /* Universal inheritance */
 *, ::before, ::after { box-sizing: inherit; }
@@ -83,8 +83,6 @@ select::-ms-value { color: currentColor; }
 table { border-collapse: collapse; border-spacing: 0; }
 
 textarea { resize: vertical; }
-
-::-moz-selection { background-color: #B3D4FC; text-shadow: none; }
 
 ::selection { background-color: #B3D4FC; text-shadow: none; }
 
